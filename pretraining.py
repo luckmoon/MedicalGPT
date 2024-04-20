@@ -387,6 +387,7 @@ def main():
     # Set seed before initializing model.
     set_seed(training_args.seed)
 
+    # Qwen/Qwen1.5-0.5B-Chat 用的是 model_args.model_type=auto
     # Load tokenizer
     config_class, model_class, tokenizer_class = MODEL_CLASSES[model_args.model_type]
 
